@@ -602,7 +602,7 @@ function specfluxes(vars, params::NondimLinearTwoLayerQGParams, grid, sol)
   # Integrate in y-direction and move to RHS.
   lateralspecfluxes = - real((sum(auxCMh, dims=2))[:, 1, :]) * grid.dy
   verticalspecflux = - real(sum(auxCTh, dims=2)) * grid.dy
-  topographicspecflux = real(sum(auxCtopoh, dims=2)) * grid.dy # already on the RHS.
+  topographicspecflux = real(sum(auxCtopoh, dims=2)) * grid.dy * params.δ₂ # already on the RHS.
 
   return lateralspecfluxes, verticalspecflux, topographicspecflux
 end
