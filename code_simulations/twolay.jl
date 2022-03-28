@@ -138,7 +138,7 @@ if SAVE_OUTPUT
 
   npzname = "../simulations/" * npzname * ".npz"
   ψ₁, ψ₂ = vars.ψ[:, :, 1], vars.ψ[:, :, 2]
-  npzdata = Dict("p1" => ψ₁', "p2" => ψ₂', "thick" => thick, "mom1" => mom1, "mom2" => mom2, "N" => N, "L" => L, "dt" => dt, "F1" => F₁, "U2fac" => U₂fac, "al" => α, "bet" => β, "d12" => δ, "ht" => ht, "tk" => tk, "sigma" => σ, "keratio" => keratio)
+  npzdata = Dict("p1" => ψ₁', "p2" => ψ₂', "thick" => thick, "mom1" => mom1, "mom2" => mom2, "ke1" => ke1, "ke2" => ke2, "pe" => pe, "N" => N, "L" => L, "dt" => dt, "F1" => F₁, "U2fac" => U₂fac, "al" => α, "bet" => β, "d12" => δ, "ht" => ht, "tk" => tk, "sigma" => σ, "keratio" => keratio)
 
   if PSI_HOVMOLLER
     npzdata = merge(npzdata, Dict("p1hovm" => ψ₁hovm', "p2hovm" => ψ₂hovm', "thovm" => thovm))
