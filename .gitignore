@@ -1,1 +1,2 @@
 simulations/*.npz
+*.ipynb_checkpoints*
