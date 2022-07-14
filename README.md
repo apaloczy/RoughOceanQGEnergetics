@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/437875283.svg)](https://zenodo.org/badge/latestdoi/437875283)
 
-This repository contains code for a manuscript entitled **"Instability of a surface jet over rough topography"**, by A. Palóczy and J. H. LaCasce, submitted to the Journal of Physical Oceanography. This [Jupyter notebook](https://nbviewer.jupyter.org/github/apaloczy/RoughOceanQGEnergetics/blob/main/index.ipynb) provides an overview of the contents.
+This repository contains code for a manuscript entitled **"Instability of a surface jet over rough topography"**, by A. Palóczy and J. H. LaCasce, [published in the Journal of Physical Oceanography](https://doi.org/10.1175/JPO-D-22-0079.1). This [Jupyter notebook](https://nbviewer.jupyter.org/github/apaloczy/RoughOceanQGEnergetics/blob/main/index.ipynb) provides an overview of the contents.
 
 The directory `plot_figs/` contains Jupyter notebooks used to produce the figures in the manuscript (Figures 1-10). These notebooks depend on the data files in the `simulations/` and `data/` directories. Scripts to generate some ancillary data files are also in the `data/` directory.
 
